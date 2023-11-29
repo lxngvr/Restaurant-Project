@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20C04C00-1D9F-4667-B193-54CAB40143C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restaurant_Project</RootNamespace>
+    <AssemblyName>DEJA-YOU Restaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C3FBC6FDBBFC363EE9E51495D404EA44757B018E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Restaurant-Project_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>anx-moeji-logo-white-.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.Engine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>D:\School Docs\Software\Guna UI\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Patagames.Pdf, Version=11.79.45.472, Culture=neutral, PublicKeyToken=60fd6cf9b15941cf, processorArchitecture=MSIL">
+      <HintPath>packages\Pdfium.Net.SDK.4.87.2704\lib\net472\Patagames.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Patagames.Pdf.WinForms, Version=4.24.18.472, Culture=neutral, PublicKeyToken=60fd6cf9b15941cf, processorArchitecture=MSIL">
+      <HintPath>packages\Pdfium.Net.SDK.4.87.2704\lib\net472\Patagames.Pdf.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Patagames.Pdf.Wpf, Version=4.24.20.472, Culture=neutral, PublicKeyToken=60fd6cf9b15941cf, processorArchitecture=MSIL">
+      <HintPath>packages\Pdfium.Net.SDK.4.87.2704\lib\net472\Patagames.Pdf.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="auto.cs" />
+    <Compile Include="DailyIncomeViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyIncomeViewer.Designer.cs">
+      <DependentUpon>DailyIncomeViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKasir.Designer.cs">
+      <DependentUpon>FormKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoApp.Designer.cs">
+      <DependentUpon>infoApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="machine.cs" />
+    <Compile Include="ManualBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualBook.Designer.cs">
+      <DependentUpon>ManualBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splash Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen.Designer.cs">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCbayar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCbayar.Designer.cs">
+      <DependentUpon>UCbayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCdashadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCdashadmin.Designer.cs">
+      <DependentUpon>UCdashadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCdashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCdashboard.Designer.cs">
+      <DependentUpon>UCdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UClaporan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UClaporan.Designer.cs">
+      <DependentUpon>UClaporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UClogactivity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UClogactivity.Designer.cs">
+      <DependentUpon>UClogactivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCmejaresto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCmejaresto.Designer.cs">
+      <DependentUpon>UCmejaresto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCorder.Designer.cs">
+      <DependentUpon>UCorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCpegawai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCmanageMenuResto.Designer.cs">
+      <DependentUpon>UCpegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCmenuresto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCmenuresto.Designer.cs">
+      <DependentUpon>UCmenuresto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DailyIncomeViewer.resx">
+      <DependentUpon>DailyIncomeViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKasir.resx">
+      <DependentUpon>FormKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoApp.resx">
+      <DependentUpon>infoApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualBook.resx">
+      <DependentUpon>ManualBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pdf.Net.SDK.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Splash Screen.resx">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCbayar.resx">
+      <DependentUpon>UCbayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCdashadmin.resx">
+      <DependentUpon>UCdashadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCdashboard.resx">
+      <DependentUpon>UCdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UClaporan.resx">
+      <DependentUpon>UClaporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UClogactivity.resx">
+      <DependentUpon>UClogactivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCmejaresto.resx">
+      <DependentUpon>UCmejaresto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCmenuresto.resx">
+      <DependentUpon>UCmenuresto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCorder.resx">
+      <DependentUpon>UCorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCpegawai.resx">
+      <DependentUpon>UCpegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Laporan Pendapatan Harian Restoran.rpt" />
+    <None Include="libpdfium.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Restaurant-Project_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataPendapatan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anx-moeji-logo-white-.ico" />
+    <Content Include="deja%27you-logo.ico" />
+    <Content Include="icudt.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\pdfium.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\pdfium.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Pdfium.Net.SDK.4.87.2704\build\Pdfium.Net.SDK.targets" Condition="Exists('packages\Pdfium.Net.SDK.4.87.2704\build\Pdfium.Net.SDK.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Pdfium.Net.SDK.4.87.2704\build\Pdfium.Net.SDK.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Pdfium.Net.SDK.4.87.2704\build\Pdfium.Net.SDK.targets'))" />
+  </Target>
+</Project>
